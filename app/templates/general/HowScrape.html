@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Import the Bootstrap stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <!-- Import our custom stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/HowScrape.css') }}">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+    <a class="navbar-brand" href="#">Python web scrap</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/general/portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/general/resume">Resume</a>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/admin/dashboard">Scraping Example</a>
+        </li>
+      </ul>
+    </div>
+  
+  </nav>
+  <!-- top bar logo and search section -->
+  <div class="topbar-section">
+    <!-- <input id="search-box" type="text" value="Search"> -->
+    <!-- <img src="{{ url_for('static', filename='img/magnifying-glass.png') }}" class='image-2' alt="" > -->
+    <img src="{{ url_for('static', filename='logo/JustLogo.png') }}" id="logo" alt="" >          
+  </div>
+<!-- First Section -->
+<div class="container">
+    <div class="row justify-content-md-center">
+      <h4>What do we mean by Web Scraping?</h4>
+      <div class="row">
+        <p>
+        Web sraping is used to extract data from webpages which they do not
+        provide data in any downloadable formats.
+        </p>
+      </div> 
+    </div>
+    <div class="row justify-content-md-center">
+      <h4>What is the Goal?</h4>
+      <div class="row">
+        <p>
+          Via web scrape applications one could be able to get access to 
+          World Wide Web directly using the HTTP, or through a web browser,
+          fetching (or in fact copying) the intended data into a central local
+          database, for later analysis.
+        </p>
+      </div> 
+    </div>
+    <div class="row justify-content-md-center">
+      <h4>Essential Libraries and Tools</h4>
+      <div class="row">
+        <p>
+          Mainly one should have the below mention libraries:
+          <ul>
+            <li>Splinter</li>
+            <li>BeautifulSoup</li>
+            <li>Pymongo</li>
+            <li>Flask</li>
+          </ul>
+        </p>
+      </div> 
+    </div>
+    <div class="row justify-content-md-center">
+      <h4>To Be Contiued </h4>
+
+    </div>
+</div>
+  
+
+
+
+
+  
+
+  <!-- Import jquery 3.3.1 slim min -->
+  <script src="{{ url_for('static', filename='js/jquery.slim.min.js') }}"></script>
+  <!-- Import Bootstrap bundle -->
+  <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+  <!-- Import our custom JavaScript -->
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  
+</body>
+<script>
+  alert("This could be your learning story!");
+</script>
+</html>

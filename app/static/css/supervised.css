@@ -1,0 +1,147 @@
+html {
+    position: relative;
+    height:100%;
+    overflow-y: scroll;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    width: relative;
+}
+#topbar {
+
+    width: 100%;
+    margin-bottom: 0px;
+    height: 60px;
+    background-color: #484848;
+    border-bottom-width: 5px;
+
+}
+
+.topbar-section {
+    width:100%;
+    margin:0 auto;
+    background-color: #484848;
+    height: 100px;
+    padding: inherit;
+}
+#search-box {
+
+    background-color: #8c8281; 
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    margin: 15px 15px 10px 5px ;
+    height:27px;
+    float: right;
+    width: 150px;
+    text-align: center;
+    border-radius: 3px;
+    
+}
+
+.right-after-topbar {
+                  
+    position: fixed;
+    margin-left: 0;
+    padding: inherit;
+    border-top: 1px solid yellow;
+    /* background-color: #505050	; */
+    width:100%;
+    height: 100px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#logo {
+    margin-top:0px;
+    margin-left: 10px;
+    width:100px;
+    float:left;
+    position: relative;
+    height: 100px;
+    padding: 0px;
+}
+
+#magnifying-glass {
+
+    height:27px;
+    margin-top: 15px;
+    float: right;
+    border-radius: 3px
+}
+
+.image-2 {
+    margin-top: 10px;
+    height:27px;
+    margin-top: 15px;
+    float: right;
+}
+
+/* Main content  */
+
+h4 {
+
+font-size: 20px;
+text-align: left;
+
+}
+
+h5 {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+   
+    background-color: #dbd9d3;
+    margin-top: 80px;
+    max-width: 800px;
+    height: 800px;
+
+}
+.row {
+    
+
+    padding:10px;
+    background-color: #C0C0C0;
+    width: 800px;
+    height: relative;
+
+    }
+.justify-content-md-center {
+   
+    padding:0px;
+    background-color: paleturquoise;
+    margin-top:5px;
+    height: relative;
+    max-width: 800px;
+    padding: 15px;
+    justify-content: left;
+    }
+
+
+p {
+    font: 20px;
+    margin: 0px;
+    padding:5px;
+    max-width: 800px;
+}
+
+li {
+    padding:0px;
+    width: 500px;
+    margin-left: 15px;
+}
+ul {
+    padding:5px;
+    
+}
+.clt {
+    background-color: #ccffff;
+    width: 800px;
+    margin-top: 20px;
+}

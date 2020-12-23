@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Import the Bootstrap stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <!-- Import our custom stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/admin_template.css') }}">
+
+  <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+
+  <div id="topbar">
+      <!-- Navigation Sestion -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+        <a class="navbar-brand" ></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/admin/dashboard">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <!-- <a class="nav-link" href="/admin/profile">Profile</a> -->
+              </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Return to site</a>
+            </li>
+          </ul>
+      </nav>
+  </div>
+<!-- End of Navigation Sestion -->
+
+
+<!-- top bar logo and search section -->
+  <div class="topbar-section">
+      <!-- <input id="search-box" type="text" value="Search"> -->
+      <!-- <img src="{{ url_for('static', filename='img/magnifying-glass.png') }}" class='image-2' alt="" > -->
+      <img src="{{ url_for('static', filename='logo/JustLogo.png') }}" id="logo" alt="" >          
+  </div>
+  <div>
+      <div class="row justify-content-center">
+        <p class="left-box-text"></p>
+        <a href="/scrape" type="button" class="btn btn-secondary">Click For Lastest Financial News Scrap</a>
+      </div>
+  </div>
+<!-- End of top bar logo and search section   -->
+
+
+  <!-- News Section -->
+  <!-- First -->
+  <!-- Reuters -->
+  <div class="container">
+      <h5>
+            <a href="https://mobile.reuters.com/finance/markets">
+              Reuters Reports On Finance Markets
+            </a>
+      </h5>
+      <li class="text-left"> {{ listings.reuters_headings}}  </li>
+  </div>
+  <!-- -------- -->
+  <div class="container">
+      <h5>
+            <a href="www.marketwatch.com/latest-news?mod=top_nav">
+                  Market Watch Latest News
+            </a>
+      </h5>
+      <li class="text-left"> {{ listings.MW_title }}  </li>
+        <span> </span>
+      <h5>
+            <a href="https://www.marketwatch.com/investing/index/djia?mod=newsviewer_click">
+                  Market Watch Lastest Report Of US Financial Markets
+            </a>
+      </h5>
+      <p class="text-left"> {{ listings.MW_table|safe }} </p>
+  </div>
+  <!-- ---------- -->
+  <div class="container">
+      <h5>
+            <a href="https://oilprice.com/Latest-Energy-News/World-News/#">
+              Latest Energy News
+            </a>
+      </h5>
+      <p class="text-left"> {{ listings.Oil_news }}  </p>
+  </div>    
+<!-- ---------- -->
+  <div class="container">
+      <h5>
+            <a href="https://oilprice.com/oil-price-charts/#prices">
+              Lates Oil Price
+            </a>
+      </h5>
+      <p>{{ listings.Oil_table|safe }}</p>
+  </div>
+   
+
+
+
+<!-- End of News Section -->
+    {% block main %}{% endblock main %}
+  <main>
+  </main>
+
+  <!-- Import jquery 3.3.1 slim min -->
+  <script src="{{ url_for('static', filename='js/jquery.slim.min.js') }}"></script>
+  <!-- Import Bootstrap bundle -->
+  <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+  <!-- Import our custom JavaScript -->
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  {% block script %}{% endblock %}
+</body>
+
+</html>

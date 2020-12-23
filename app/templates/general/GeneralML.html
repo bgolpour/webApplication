@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Import the Bootstrap stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <!-- Import our custom stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/GeneralML.css') }}">
+
+  <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+
+  <div id="topbar">
+      <!-- Navigation Sestion -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+        <a class="navbar-brand" ></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/admin/dashboard">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/admin/profile">Profile</a>
+              </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Return to homepage</a>
+              </li>
+            </ul>
+        </nav>
+    </div>
+  <!-- End of Navigation Sestion -->
+  <!-- top bar logo and search section -->
+  <div class="topbar-section">
+    <input id="search-box" type="text" value="Search">
+    <img src="{{ url_for('static', filename='img/magnifying-glass.png') }}" class='image-2' alt="" >
+    <img src="{{ url_for('static', filename='logo/JustLogo.png') }}" id="logo" alt="" >          
+  </div>
+
+<!-- End of top bar logo and search section -->
+
+<!-- Main Content -->
+
+<div class="container">
+  <div class="h3-container">
+    <h3>Artificial Intelligence And Marketing</h3>
+  </div>
+  <p>
+    Nowadays the artificial intelligence solutions together with data science and business analytics solutions such as Business Intelligence systems,
+    Big data and data mining play crucial role in the management of many con- temporary business organizations. The multitude of its benefits include
+    improvement of the whole management process of business organization and especially the process of decision making, allowing for automation of tasks
+    in many areas <a href="https://link.springer.com/chapter/10.1007/978-3-030-12388-8_23">(D.Jelonek)</a>.
+  </p>
+  <p>
+    According to <a href="https://scholar.google.ca/citations?user=4rVAgWUAAAAJ&hl=en">Arnaud De Bruyn</a>
+    and colleges: Artificial Intelligence will
+    have a deep impact on predictive tasks that can be automated and require little explainability.
+  </p>
+  <p>
+    The artificial intelligence solutions may embrace the whole set of data science and
+    mining methods, techniques and tools as well as classical and advanced statistical
+    methods such as classification with the application of decision trees and rule- based
+    methods, k-nearest neighbor, linear discrimination, regression analysis connected with
+    data prognosis for specific variables or cluster analysis <a href="https://scholar.google.ca/scholar?hl=en&as_sdt=
+0%2C5&q=Munakata%2C+T.%3A+Fundamentals+of+the+New+Artificial+Intelligence%3A+Neural
+%2C+Evolutionary%2C+Fuzzy+and+More.+Springer%2C+London+%282008%29&btnG=">(T.Munakata).</a>
+  </p>
+  <p>
+    In <a href="supervised.html"> Supervised</a>, <a href="unsupervised.html">Unsupervised</a>, and <a href="reinforced.html">Reinforced</a> sections,
+    I tried to cover a thorough explanation about these Machine Learning paradigms and also some examples of their application in Marketing context.
+  </p>
+
+</div>
+
+
+<!-- End of Main Content -->
+
+
+</body>
+</html>

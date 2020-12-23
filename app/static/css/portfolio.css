@@ -1,0 +1,192 @@
+
+
+body {
+
+    background-color: #E8E8E8;
+    margin:0;
+    padding:0;
+    width: auto;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 150%;
+    min-height: 100%;
+    align-items: center;
+
+}
+
+
+
+html, body {
+    position: relative;
+    height:100%;
+    overflow-y: scroll;
+}
+
+.clear {
+    clear:both;
+}
+
+
+h3 {
+    text-align: center;
+    color: black;
+    margin-top: 5px;
+}
+
+
+#topbar {
+
+    width: 100%;
+    margin-bottom: 0px;
+    height: 60px;
+    background-color: #484848;
+    border-bottom-width: 5px;
+
+}
+
+.topbar-section {
+    width:100%;
+    margin:0 auto;
+    background-color: #484848;
+    height: 100px;
+    padding: inherit;
+}
+
+
+.clear {
+    clear:both;
+}
+.right-after-topbar {
+                
+    position: fixed;
+    margin-left: 0;
+    padding: inherit;
+    background-color: #505050	;
+    width:100%;
+    height: 100px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#logo {
+    margin-top:0px;
+    margin-left: 10px;
+    width:100px;
+    float:left;
+    position: left;
+    height: 100px;
+    padding: 0px;
+}
+
+
+.banafshehgolpour {
+    padding: 0px;
+    height: 100px;
+    text-align: center;
+    width: 100%;
+
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.logo-image {
+    width: 110px;
+    height: 100px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+  }
+
+
+
+
+.image-1 {
+
+    float: right;
+    width: 135px;
+    height: 95px;
+}
+.image-2 {
+    float: right;
+    width: 30px;
+    height: 30px;
+    padding:0px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+
+
+
+#search-box {
+background-color: #bab0af;
+border: none;
+font-weight: bold;
+font-size: 14px;
+font-family: 'Times New Roman', Times, serif;
+padding: 5px;
+margin: 15px 15px 10px 5px ;
+height:27px;
+float: right;
+width: 150px;
+text-align: center;
+border-radius: 3px;
+
+}
+
+.container {
+    margin: auto;
+
+}
+.box {
+margin: auto;
+margin-top: 40px;
+margin-bottom: 0px;
+color:black;
+background-color: white; 
+padding: 10px 20px 25px;
+width: auto;
+height: auto;
+
+}
+
+.project-name {
+
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom:0px;
+    padding:0px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.project-description {
+
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: auto;
+    text-align: justify;
+    margin-bottom:0px;
+}
+.repo {
+
+    margin-top: 0px;
+    margin-bottom:0px;
+    margin-left: 15px;
+    margin-right: 10px;
+    text-align: justify;
+    padding: 0px;
+
+}
+
+.skills {
+
+    margin-left: 15px;
+    padding: 0px;
+
+}

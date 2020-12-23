@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Import the Bootstrap stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <!-- Import our custom stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/portfolio.css') }}">
+
+  <title>{% block title %}Banafshe Golpour{% endblock %}</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+    <a class="navbar-brand" href="#">Banafshe Golpour</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/general/portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/general/resume">Resume</a>
+        </li>
+      </ul>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/admin/dashboard">Scraping Example</a>
+          </li>
+        </ul>
+      </div>
+    
+    </nav>
+    <!-- top bar logo and search section -->
+    <div class="topbar-section">
+      <!-- <input id="search-box" type="text" value="Search"> -->
+      <!-- <img src="{{ url_for('static', filename='img/magnifying-glass.png') }}" class='image-2' alt="" > -->
+      <img src="{{ url_for('static', filename='logo/JustLogo.png') }}" id="logo" alt="" >          
+    </div>   
+<!-- content section--> 
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-md-12">
+                <div class="box">
+                    <div class="project-name">
+                        <p>
+                            <strong>Project name:</strong>
+                            Web Sraping
+                        </p>
+                    </div>
+                    <div  class="project-description">
+                        <p>
+                            <strong>Description:</strong>
+                            In this project, I built a web application that scrapes
+                            various websites for data related to the Mission to Mars and displays
+                            the information in a single HTML page.
+                            In current website's homepage there more examples of web sraping.
+                        </p>
+                    </div>
+
+                    <div  class="repo">
+                        <p>
+                            <strong>Repository:</strong>
+                            <a href="https://github.com/bgolpour/Web-scraping" target="_blank" rel="noopener">https://github.com/bgolpour/Web-scraping</a>
+                        </p>
+                        <img src="{{ url_for('static', filename='img/WebScrap.png') }}" class='image-1' alt="">
+                    </div>
+                    <div class="skills">
+                        <p>
+                            <strong>Skils:</strong>
+                            <ul>
+                                <li>Beautiful Soup</li>
+                                <li>MongoDB</li>
+                                <li>Flask</li>
+                                <li>Splinter</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="box">
+                    <div class="project-name">
+                        <p>
+                            <strong>Project name:</strong>
+                            Plotly Interactive Dashboard  
+                        </p>
+                    </div>
+                    <div  class="project-description">
+                        <p>
+                            <strong>Description:</strong>
+                            This project built an interactive dashboard to explore a data set in JSON.
+                            The data set is from a science project called Belly Button Biodiversity. 
+                            This project was developed in JavaScript using Plotly.JS and D3.JS.
+                        </p>
+                    </div>
+                    <div  class="repo">
+                        <p>
+                            <strong>Repository:</strong>
+                            <a href="https://github.com/bgolpour/Plotly-BellyButton-Biodiversity" target="_blank" rel="noopener">https://github.com/bgolpour/Plotly-BellyButton-Biodiversity</a>
+                        </p>
+                        <img src="{{ url_for ('static', filename='img/biodiversityDushboard.png') }}" class='image-1'  alt="">
+                    </div>
+                    <div class="skills">
+                        <p>
+                            <strong>Skils:</strong>
+                        <ul>
+                            <li>HTMS/CSS3 with bootstrap</li>
+                            <li>JavaScript</li>
+                            <li>GeoJson</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="box">
+                    <div class="project-name">
+                        <p>
+                            <strong>Project name:</strong>
+                            Python for Finance
+                        </p>
+                    </div>
+                    <div  class="project-description">
+                        <p>
+                            <strong>Description:</strong>
+                            In this project a Python script for analyzing the financial
+                            records of a company. The task was to create a Python script
+                            that analyzes the records to calculate: The total number of months
+                            included in the dataset, the net total amount of "Profit/Losses" over
+                            the entire period, and The greatest increase in profits (date and amount)
+                            over the entire period.
+                        </p>
+                    </div>
+                    <div  class="repo">
+                        <p>
+                            <strong>Repository:</strong>
+                            <a href="https://github.com/bgolpour/Python" target="_blank" rel="noopener">https://github.com/bgolpour/Python</a>
+                        </p>
+                        <img src="{{ url_for('static', filename='img/stockmarket.jpg') }}" class='image-1'  alt="">
+                    </div>
+                    <div class="skills">
+                        <p>
+                            <strong>Skils:</strong>
+                        <ul>
+                            <li>Python development</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="box">        
+                    <div class="project-name">
+                        <p>
+                            <strong>Project name:</strong>
+                            Python APIs
+                        </p>
+                    </div>
+                    <div  class="project-description">
+                        <p>
+                            <strong>Description:</strong>
+                            This project was concerend Python requests, APIs, and JSON traversals to answer
+                             a fundamental question: "What's the weather like as we approach the equator?
+                        </p>
+                    </div>
+                    <div  class="repo">
+                        <p>
+                            <strong>Repository:</strong>
+                            <a href="https://github.com/bgolpour/PythonAPIs" target="_blank" rel="noopener">https://github.com/bgolpour/PythonAPIs</a>
+                        </p>
+                        <img src="{{ url_for('static', filename='img/pythonapis.png') }}" class='image-1' alt="">
+                    </div>
+                    <div class="skills">
+                        <p>
+                            <strong>Skills:</strong>
+                        <ul>
+                            <li>Data Analysis</li>
+                            <li>Python requests</li>
+                            <li>Matplotlib and Pandas libraries</li>
+                            <li>Google API</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12">
+            </div>
+        </div>
+    </div>
+    <!-- Import jquery 3.3.1 slim min -->
+  <script src="{{ url_for('static', filename='js/jquery.slim.min.js') }}"></script>
+  <!-- Import Bootstrap bundle -->
+  <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+  <!-- Import our custom JavaScript -->
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  {% block script %}{% endblock %}
+</body>
+<script>
+    alert("This is my portfolio");
+</script>
+</html>
+

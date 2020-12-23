@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Import the Bootstrap stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <!-- Import our custom stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/supervised.css') }}">
+
+  <title>{% block title %}Banafshe Golpour{% endblock %}</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/general/portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/general/resume">Resume</a>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/admin/dashboard">Scraping Example</a>
+        </li>
+      </ul>
+    </div>
+  
+  </nav>
+  
+  <!-- top bar logo and search section -->
+  <div class="topbar-section">
+    <input id="search-box" type="text" value="Search">
+    <img src="{{ url_for('static', filename='img/magnifying-glass.png') }}" class='image-2' alt="" >
+    <img src="{{ url_for('static', filename='logo/JustLogo.png') }}" id="logo" alt="" >          
+  </div>
+
+<!-- First Section -->
+<div class="container">
+    <div class="row justify-content-md-center">
+      <h4>What do we mean by Supervised Learning?</h4>
+      <div class="row">
+        <p>
+          We used supervised learning whenever we want to predict a particular outcome from a given input.
+          In supervised learning we have examples of input/output pairs.
+          With supervise learning we will have a ML model from before said input/output pairs,
+          which comprise our training set.
+        </p>
+      </div> 
+    </div>
+    <div class="row justify-content-md-center">
+      <h4>What is the Goal?</h4>
+      <div class="row">
+        <p>
+          The goal is to make precise predictions for new, never-bofore-seen data.
+        </p>
+      </div> 
+    </div>
+    <div class="row justify-content-md-center">
+      <h4>Which methods are considered as supervised learning?</h4>
+      <div class="row">
+        <p>
+         <b>Below chart is showing a comprehensive pattern of supervised ML methods:</b>
+            <div class="clt">
+              <ul>
+                <li>
+                  k-Nearest Neighbors
+                  <ul>
+                    <li>k-Neighbors classification</li>
+                    <li>k-neighbors regression</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>   
+            <div class="clt">
+              <ul>
+                <li>
+                  Linear Models
+                  <ul>
+                    <li>Linear regression (aka ordinary least squares)
+                      <ul>
+                        <li>Ridge regression</li>
+                        <li>Lasso</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Linear models for classification                    
+                      <ul>
+                       <li>Binary Classification:
+                         <ul>
+                           <li>
+                             Logistic regression
+                           </li>
+                           <li>
+                             Linear support vector machine
+                           </li>
+                         </ul>
+                       <li>Linear models for multiclass classification:</li>
+                          <ul>
+                            <li>
+                              one-vs.-rest(A technique to extend a binary classification algorithm to a multiclass classification)
+                            </li>
+                          </ul>
+                       </li>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="clt">
+              <ul>
+                <li>
+                  Naive Bayes Classifiers
+                  <ul>
+                    <li>GaussianNB</li>
+                    <li>BernoulliNB</li>
+                    <li>Multinomia</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="clt">
+              <ul>
+                <li>
+                  Decision Trees
+                  <ul>
+                    <li>Decision Tree Classifier</li>
+                    <li>Decision Tree Regressor</li>
+                  </ul>
+                  <ul>
+                    <li>
+                      Ensembles of Decision Trees
+                      <ul>
+                      <li>Random forests</li>
+                      <li>Gradient boosted regression trees (gradient boosting machines)</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+        </p>
+      </div>
+    <div class="row justify-content-md-center">
+      <h4>Essential Libraries and Tools:</h4>
+      <div class="row">
+        <p>
+          Mainly one should have the below mention items:
+          <ul>
+            <li>pandas</li>
+            <li>NumPy</li>
+            <li>SciPy</li>
+            <li>matplotlib</li>
+          </ul>
+        </p>
+      </div> 
+    </div>
+    <div class="row justify-content-md-center">
+      <h4>To Be Contiued </h4>
+
+    </div>        
+        
+</div>
+<!-- End -->
+  <!-- Import jquery 3.3.1 slim min -->
+  <script src="{{ url_for('static', filename='js/jquery.slim.min.js') }}"></script>
+  <!-- Import Bootstrap bundle -->
+  <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+  <!-- Import our custom JavaScript -->
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  </body>
+  <script>
+    alert("This could be your learning story!");
+  </script>
+  </html>
